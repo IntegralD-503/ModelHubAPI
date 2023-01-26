@@ -1,0 +1,28 @@
+{
+  "name": "ModelHubAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IntegralD-503/ModelHubAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IntegralD-503/ModelHubAPI/issues"
+  },
+  "homepage": "https://github.com/IntegralD-503/ModelHubAPI#readme",
+  "dependencies": {
+    "@vendia/serverless-express": "^4.10.1",
+    "axios": "^1.2.4",
+    "express": "^4.18.2",
+    "jest": "^29.4.0",
+    "jest-junit": "^15.0.0"
+  }
+}
