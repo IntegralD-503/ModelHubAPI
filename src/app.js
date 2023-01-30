@@ -1,14 +1,13 @@
 // servicelambda
-const express = require('express')
+const express = require('express');
+const mlModels = require('./routes/ml-models');
 const app = express();
 
-app.get("/", (req, res) => {
-	res.send("hola mundo")
-})
+app.use('/api/v0/modelhub', mlModels);
 
-const port = 8080
+const PORT = 8080
 app.listen(port, () => {
-	console.log(`Server started at http://localhost:${port}`);
+	console.log(`Server started at http://localhost:${PORT}`);
 });
 
 module.exports = app
