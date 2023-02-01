@@ -6,7 +6,7 @@ const MLModel = require('../models/MLModel');
 exports.getModels = async (req, res, next) => {
 
     try {
-        const mlModel = await MLModel.get(1)
+        const mlModel = await MLModel.get("1")
         console.log(mlModel);
         res.status(200).json({
             success: true,

@@ -21,4 +21,6 @@ const MLModelSchema = new dynamoose.Schema(
     }
 );
 
-module.exports = dynamoose.model(process.env.DYNAMODB_TABLE, MLModelSchema);
+module.exports = dynamoose.model(process.env.DYNAMODB_TABLE, MLModelSchema, {
+    create: false,
+});
